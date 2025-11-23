@@ -1,0 +1,40 @@
+:root {
+    --font-main: "Arial", sans-serif;
+    --color-home: #ffe6e6;
+    --color-about: #f2f2f2;
+    --color-gallery: #fff0f0;
+    --color-contact: #ff4d4d;
+    --hover-scale: 1.05;
+    --transition-speed: 0.3s;
+}
+
+body, h1, h2, p {
+    font-family: var(--font-main);
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#home {
+    background-color: var(--color-home);
+}
+
+#about {
+    background-color: var(--color-about);
+}
+
+#gallery {
+    background-color: var(--color-gallery);
+}
+
+#contact {
+    background-color: var(--color-contact);
+    color: white;
+}
+
+.w3-image:hover {
+    transform: scale(var(--hover-scale));
+    transition: var(--transition-speed);
+}
